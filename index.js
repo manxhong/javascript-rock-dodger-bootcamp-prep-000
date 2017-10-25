@@ -87,9 +87,10 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
      var rockTop = positionToInteger(rock.style.top);
-     console.log(rock.style.top);
-     while (rock.style.top < 360) {
-       rock.style.top+=2;
+     console.log(rockTop);
+     while (rockTop < 360) {
+       rockTop+=2;
+       
      }
 
      if (rock.style.top>360) {
