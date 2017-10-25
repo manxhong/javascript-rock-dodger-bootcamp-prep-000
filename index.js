@@ -126,7 +126,6 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   var myNode = document.getElementsByClassName("rock");
-  window.cancelAnimationFrame(myNode);
   while (myNode.length)
   {myNode[0].classList.remove("rock");}
 
