@@ -82,16 +82,15 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-     console.log('call Move Rock');
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-     while (top<360) {
-       top+=2;
+     while (rock.style.top<360) {
+       rock.style.top+=2;
      }
 
-     if (top>360) {
+     if (rock.style.top>360) {
        console.log('bottom of the GAME');
      }
     /**
