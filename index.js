@@ -44,7 +44,7 @@ function checkCollision(rock) {
       return true
     }
   }
-
+  return false;
   /**
              * Think about it -- what's happening here?
              * There's been a collision if one of three things is true:
