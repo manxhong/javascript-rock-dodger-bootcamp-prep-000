@@ -89,12 +89,12 @@ function createRock(x) {
      var rockTop = positionToInteger(rock.style.top);
      console.log(rockTop);
      console.log(rock.style.top)
-     if (rockTop < 360) {
+     if (rockTop < GAME_HEIGHT) {
        rockTop+=2;
        rock.style.top = `${rockTop}px`
      }
 
-     if (rock.style.top>360) {
+     if (rock.style.top === GAME_HEIGHT) {
        console.log('bottom of the GAME');
      }
     /**
