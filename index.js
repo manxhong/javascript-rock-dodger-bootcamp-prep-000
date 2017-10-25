@@ -147,7 +147,7 @@ function moveDodgerLeft() {
    var dodgerLeftEdge = positionToInteger(DODGER.style.left);
 
    function step() {
-    DODGER.style.left = `${rightEdge-=4}px`
+    DODGER.style.left = `${dodgerLeftEdge-=4}px`
 
     if (dodgerLeftEdge !== 0) {
       window.requestAnimationFrame(step)
