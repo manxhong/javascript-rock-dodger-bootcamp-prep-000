@@ -68,7 +68,9 @@ function createRock(x) {
    */
    GAME.append(rock);
 
-   moveRock();
+   setInterval(function() {
+     moveRock())
+   }, 1000)
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
@@ -85,6 +87,8 @@ function createRock(x) {
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
+     
+     
 
     /**
      * But if the rock *has* reached the bottom of the GAME,
