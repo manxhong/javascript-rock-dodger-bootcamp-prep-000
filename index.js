@@ -126,9 +126,8 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   var myNode = document.getElementsByClassName("rock");
-  while (myNode.firstChild) {
-    myNode.removeChild(myNode.firstChild);
-  }
+  while (myNode.length)
+  {myNode[0].classList.remove("light");}
   ROCKS.splice(0, ROCKS.length);
   console.log(ROCKS);
 
