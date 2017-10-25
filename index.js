@@ -147,9 +147,10 @@ function moveDodgerLeft() {
    var dodgerLeftEdge = positionToInteger(DODGER.style.left);
 
    function step() {
-    DODGER.style.left = `${dodgerLeftEdge-=4}px`
+    
 
     if (dodgerLeftEdge !== 0) {
+      DODGER.style.left = `${dodgerLeftEdge-=4}px`
       window.requestAnimationFrame(step)
     }
   }
@@ -165,7 +166,7 @@ function moveDodgerRight() {
    var dodgerLeftEdge = positionToInteger(DODGER.style.left);
 
    function step() {
-    
+
 
     if (dodgerLeftEdge < 360) {
       DODGER.style.left = `${dodgerLeftEdge+=4}px`
