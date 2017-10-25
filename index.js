@@ -95,7 +95,7 @@ function createRock(x) {
      }
 
      if (rockTop >= 300) {
-       rock.parentNode.removeChild(rock);
+       rock.removeChild();
        console.log('bottom of the GAME');
      }
     /**
