@@ -88,6 +88,7 @@ function createRock(x) {
      */
      var rockTop = positionToInteger(rock.style.top);
      console.log(rockTop);
+     console.log(rock.style.top)
      while (rockTop < 360) {
        rockTop+=2;
        rock.style.top = `${rockTop}px`
