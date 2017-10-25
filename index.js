@@ -128,6 +128,7 @@ function endGame() {
   var myNode = document.getElementsByClassName("rock");
   while (myNode.length)
   {myNode[0].classList.remove("rock");}
+  window.cancelAnimationFrame(moveRock);
   ROCKS.splice(0, ROCKS.length);
   console.log(ROCKS);
 
