@@ -150,7 +150,7 @@ function moveDodgerRight() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    var dodgerLeftEdge = positionToInteger(DODGER.style.left)
-    DODGER.style.left = `${dodgerLeftEdge+=4}px`
+    DODGER.style.left = `${dodgerLeftEdge-=4}px`
 }
 
 /**
