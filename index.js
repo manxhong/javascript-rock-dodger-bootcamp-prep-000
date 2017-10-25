@@ -127,10 +127,10 @@ function endGame() {
   clearInterval(gameInterval);
   ROCKS.splice(0, ROCKS.length);
   console.log(ROCKS);
-  var myNode = document.getElementByClassName("rock");
+  var myNode = document.getElementsByClassName("rock");
   while (myNode.firstChild) {
     myNode.removeChild(myNode.firstChild);
-  } 
+  }
   window.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
 }
