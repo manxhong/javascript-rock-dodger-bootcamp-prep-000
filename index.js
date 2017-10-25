@@ -74,9 +74,11 @@ function createRock(x) {
    */
    GAME.append(rock);
 
-   setInterval(function() {
-     moveRock()
-   }, 1000)
+  //  setInterval(function() {
+  //    moveRock()
+  //  }, 1000)
+
+  moveRock();
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
