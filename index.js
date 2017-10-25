@@ -94,7 +94,7 @@ function createRock(x) {
        window.requestAnimationFrame(moveRock)
      }
 
-     if (rockTop > GAME_HEIGHT) {
+     if (rockTop >= GAME_HEIGHT) {
        rock.parentNode.removeChild(rock);
        console.log('bottom of the GAME');
      }
