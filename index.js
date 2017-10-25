@@ -90,7 +90,7 @@ function createRock(x) {
      console.log(rockTop);
      while (rockTop < 360) {
        rockTop+=2;
-       
+       rock.style.top = `${rockTop}px`
      }
 
      if (rock.style.top>360) {
