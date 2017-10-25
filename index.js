@@ -89,7 +89,7 @@ function createRock(x) {
      var rockTop = positionToInteger(rock.style.top);
     //  console.log(rockTop);
     //  console.log(rock.style.top)
-     if (rockTop < GAME_HEIGHT) {
+     if (rockTop < 300) {
        rock.style.top = `${rockTop+=2}px`
        window.requestAnimationFrame(moveRock)
      }
