@@ -45,7 +45,7 @@ function checkCollision(rock) {
     }
   }
   return false;
-  /**
+  /*
              * Think about it -- what's happening here?
              * There's been a collision if one of three things is true:
              * 1. The rock's left edge is < the DODGER's left edge,
@@ -72,7 +72,7 @@ function createRock(x) {
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-   GAME.append(rock);
+   GAME.appendChild(rock);
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
