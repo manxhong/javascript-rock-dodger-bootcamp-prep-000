@@ -147,7 +147,7 @@ function moveDodgerLeft() {
    var dodgerLeftEdge = positionToInteger(DODGER.style.left);
 
    function step() {
-    
+
 
     if (dodgerLeftEdge !== 0) {
       DODGER.style.left = `${dodgerLeftEdge-=4}px`
