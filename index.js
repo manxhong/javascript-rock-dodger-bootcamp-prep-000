@@ -87,9 +87,13 @@ function createRock(x) {
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-     
-     
+     while (top<360) {
+       top+=2;
+     }
 
+     if (top>360) {
+       console.log('bottom of the GAME');
+     }
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
