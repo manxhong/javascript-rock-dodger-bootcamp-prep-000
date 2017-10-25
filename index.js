@@ -146,6 +146,8 @@ function moveDodgerLeft() {
    */
   var dodgerLeftEdge = positionToInteger(DODGER.style.left)
    DODGER.style.left = `${dodgerLeftEdge+=4}px`
+
+   window.requestAnimationFrame(moveDodgerLeft)
 }
 
 function moveDodgerRight() {
@@ -156,6 +158,8 @@ function moveDodgerRight() {
    */
    var dodgerLeftEdge = positionToInteger(DODGER.style.left)
     DODGER.style.left = `${dodgerLeftEdge-=4}px`
+
+    window.requestAnimationFrame(moveDodgerRight)
 }
 
 /**
