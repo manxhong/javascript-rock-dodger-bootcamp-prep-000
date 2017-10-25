@@ -58,7 +58,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = 0
+  let top = 0
 
   rock.style.top = top
 
@@ -87,7 +87,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
 
-     console.log(rock.style.top)''
+     console.log(rock.style.top);
      while (rock.style.top<360) {
        rock.style.top+=2;
      }
