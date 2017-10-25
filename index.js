@@ -126,6 +126,8 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   ROCKS.splice(0, ROCKS.length);
+  console.log(ROCKS);
+  
   window.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
 }
