@@ -95,6 +95,7 @@ function createRock(x) {
      }
 
      if (rock.style.top === GAME_HEIGHT) {
+       rock.parentNode.removeChild(rock);
        console.log('bottom of the GAME');
      }
     /**
