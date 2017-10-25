@@ -129,7 +129,7 @@ function endGame() {
   while (myNode.firstChild) {
     myNode.removeChild(myNode.firstChild);
   }
-  // ROCKS.splice(0, ROCKS.length);
+  ROCKS.splice(0, ROCKS.length);
   console.log(ROCKS);
 
   window.removeEventListener('keydown', moveDodger);
